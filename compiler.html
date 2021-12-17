@@ -5,12 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Codingo</title>
     
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- CSS -->
         <link rel="stylesheet" href="compiler.css">
         <!-- JAVASCRIPT -->
@@ -19,28 +17,32 @@
     </head>
     <body>
         <!--NAVBAR-->
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Codingo</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="compiler.html">Compiler</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="about.html">About</a></li>
+              <a class="navbar-brand" href="#">Codingo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="compiler.html">Compiler</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
                 </ul>
-                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
         <!--CONTAINER-->
-        <div class="container">
+        <div class="container my-5">
             <div class="row">
                 <div class="col-sm-6">
                     <h4>Language</h4>
@@ -55,16 +57,15 @@
                     </select>
                     <!--SOURCE CODE-->
                     <h4>Code</h4>
-                    <textarea id="source" class="textbox-code">
-                        #include <bits/stdc++.h>
-                        using namespace std;
+                    <textarea id="source" class="textbox-code" placeholder="#include <bits/stdc++.h>
+using namespace std;
 
-                        int main()
-                        {
-                            cout<<"Your code Here";
+int main()
+{
+   cout<<'Your code Here';
 
-                            return 0;
-                        }
+   return 0;
+}">
                     </textarea>
                 </div>
                 <div class="col-sm-6">
