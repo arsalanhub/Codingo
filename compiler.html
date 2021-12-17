@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Codingo</title>
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="compiler.css">
+        <!-- JAVASCRIPT -->
+        <script src="script.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Codingo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="compiler.html">Compiler</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!--CONTAINER-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Language</h4>
+                    <select id="lang">
+                        <option>Bash</option>
+                        <option>C#</option>
+                        <option selected>C++</option>
+                        <option>C</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>Ruby</option>
+                    </select>
+                    <!--SOURCE CODE-->
+                    <h4>Code</h4>
+                    <textarea id="source" class="textbox-code">
+                        #include <bits/stdc++.h>
+                        using namespace std;
+
+                        int main()
+                        {
+                            cout<<"Your code Here";
+
+                            return 0;
+                        }
+                    </textarea>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                            <!--INPUT-->
+                        <div class="col-sm-6">
+                            <h4>Input<sub><small>(optional)</small></sub></h4>
+                            <textarea id="input" class="textbox-input">Codingo</textarea>
+                            <!--OUTPUT-->
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>Expected Output<sub><small>(optional)</small></sub></h4>
+                            <textarea id="expected-output" class="textbox-output"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <button id="run" class="btn anim" onclick="run()">▶️ Run (Ctrl + Enter)</button>
+                    <br><br>
+                    <!--TERMINAL OUTPUT-->
+                    <textarea readonly id="output" class="textbox-run"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

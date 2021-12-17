@@ -1,0 +1,82 @@
+
+.textbox-code {
+  width: 100%;
+  height: 70vh;
+}
+.textbox-input {
+  width: 100%;
+  height: 20vh;
+}
+.textbox-output {
+  width: 100%;
+  height: 20vh;
+}
+.textbox-run {
+  width: 100%;
+  height: 40vh;
+}
+textarea {
+    resize: none;
+}
+
+
+/* BUTTON */
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+
+.button-run {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  background: #111;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 100px;
+  padding: .9em 1.2em;
+  color: #00000077;
+  text-align: center;
+  font:  'Raleway', sans-serif;
+  letter-spacing: 2px;
+  background: #b0c4de;
+  cursor: pointer;
+/*   transition: .57s cubic-bezier(.42,.67,.13,1.57); */
+  transition: .7s cubic-bezier(.65,.69,.35,1.27);
+}
+
+.btn:hover{
+  box-shadow: 0 0 20px #7df9ff;
+  background: #00ffef;
+  animation: jiggle 1.7s ease-in;
+  animation-iteration-count: 1;
+}
+@keyframes jiggle {
+  38%, 52% {
+    transform: scale(1.0, 1.0)
+  }
+  40% {
+    transform: scale(1.1, 0.9)
+  }
+  46% {
+    transform: scale(0.9, 1.1) translate(0, -5px)
+  }
+  49% {
+    transform: scale(1.0, 1.0) translate(0, -3px)
+  }
+}
+
+@keyframes up {
+  0% {
+  opacity: 0;
+  transform: translateY(-100px);
+  }
+  100% {
+  opacity: 1;
+  transform: translateY(0);
+  }
+}

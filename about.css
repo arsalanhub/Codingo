@@ -1,0 +1,24 @@
+:root {
+  --bg-color: #fff;
+  --primary-text-color: #222;
+  --secondary-text-color: #444;
+}
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+}
+.content {
+  color: var(--primary-text-color);
+}
+.content p {
+  color: var(--secondary-text-color);
+}
+.dark-mode {
+  --bg-color: #3e4c59;
+  --primary-text-color: #fff;
+  --secondary-text-color: #ddd;
+}
