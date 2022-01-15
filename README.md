@@ -3,8 +3,6 @@ In this judge0 API is used for compiler and NewsAPI for fetching the news.
 
 ## :file_folder: File Structure
 
--   Add a file structure here with the basic details about files, below is current file structure.
-
 ```
 │   index.html
 │   README.md
